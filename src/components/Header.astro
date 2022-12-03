@@ -1,0 +1,50 @@
+---
+import logo from "../images/logo.png";
+
+const navigationItems = [
+	{
+		name: "Home",
+		link: "/",
+	},
+	{
+		name: "Games",
+		link: "/",
+	},
+	{
+		name: "Team",
+		link: "",
+	},
+		{
+		name: "Contact",
+		link: "",
+	}
+];
+---
+
+<header class="bg-custom-dark p-0">
+	<div
+		class="container flex justify-between items-center"
+	>
+		<div>
+			<a href="/">
+				<img src={logo} alt="logo" class="max-h-8" />
+			</a>
+		</div>
+		<nav>
+			<ul class="flex gap-8">
+				{
+					navigationItems.map((item) => (
+						<li>
+							<a
+								href={item.link}
+								class="text-sm font-bold tracking-wider text-white transition-all duration-200 hover:text-orange-400"
+							>
+								{item.name}
+							</a>
+						</li>
+					))
+				}
+			</ul>
+		</nav>
+	</div>
+</header>
