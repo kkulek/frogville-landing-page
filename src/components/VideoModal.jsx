@@ -48,7 +48,7 @@ export default function VideoModal({videoYT}) {
 								<Dialog.Panel className="relative transform overflow-hidden rounded-lg m-5 text-left shadow-xl transition-all w-full lg:max-w-5xl">
 									<div class="w-full h-full aspect-w-16 aspect-h-9">
 										<iframe
-											src={`https://www.youtube.com/embed/${videoYT}`}
+											src={`https://www.youtube.com/embed/${videoYT}?autoplay=1`}
 											frameborder="0"
 											allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 											allowfullscreen
