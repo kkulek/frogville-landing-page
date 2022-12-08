@@ -1,14 +1,13 @@
 import React from 'react'
 import { motion } from "framer-motion";
 
-
 export default function TeamCard({item, index}) {
   return (
-		<motion.li
+		<motion.div
 			initial={{ opacity: 0, scale: 0, x: "-100" }}
 			animate={{ opacity: 1, scale: 1, x: 0 }}
 			transition={{ duration: 0.5, delay: 0.1 * index }}
-			class="rounded-lg bg-gray-900 py-10 px-6 text-center xl:px-10 xl:text-left mb-6 sm:mb-0"
+			class="rounded-lg bg-gray-900 py-10 px-6 text-center xl:px-10 xl:text-left mb-6 sm:mb-0 shadow-md shadow-gray-900"
 		>
 			<div class="space-y-6 xl:space-y-6">
 				<div class="mx-auto rounded-full h-56 w-56 bg-gray-800 shadow-2xl hover:scale-105 transition-all duration-500">
@@ -25,6 +24,6 @@ export default function TeamCard({item, index}) {
 					</div>
 				</div>
 			</div>
-		</motion.li>
+		</motion.div>
 	);
 }
