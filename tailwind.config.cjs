@@ -8,6 +8,11 @@ module.exports = {
 					dark: "#0f172a",
 				},
 			},
+			backgroundImage: {
+				"top-layer": "url('/images/wave-top-dark.svg')",
+				"bottom-layer": "url('/images/wave-bottom-dark.svg')",
+				"bottom-layer2": "url('/images/wave-bottom-light.svg')",
+			}
 		},
 	},
 	plugins: [
