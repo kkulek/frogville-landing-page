@@ -1,4 +1,6 @@
 ---
+import TeamCard from "./TeamCard";
+
 const team = [
 	{
 		name: "Jan",
@@ -51,27 +53,11 @@ const team = [
 			</div>
 			<ul
 				role="list"
-				class="space-y-4 sm:grid sm:grid-cols-2 sm:gap-6 sm:space-y-0 lg:grid-cols-3 lg:gap-8"
+				class=" sm:grid sm:grid-cols-2 sm:gap-6 lg:grid-cols-3 lg:gap-8"
 			>
 				{
-					team.map((item) => (
-						<li class="rounded-lg bg-gray-900 py-10 px-6 text-center xl:px-10 xl:text-left">
-							<div class="space-y-6 xl:space-y-6">
-								<div class="mx-auto rounded-full h-40 w-40 xl:h-56 xl:w-56 bg-gray-800 shadow-2xl">
-									<img
-										class="mx-auto rounded-full h-40 w-40 xl:h-56 xl:w-56 object-cover"
-										src={`/images/${item.photo}`}
-										alt=""
-									/>
-								</div>
-								<div class="space-y-2 text-center">
-									<div class="space-y-1 text-lg font-medium leading-6">
-										<h3 class="text-white text-xl">{item.name}</h3>
-										<p class="text-indigo-400">{item.position}</p>
-									</div>
-								</div>
-							</div>
-						</li>
+					team.map((item, index) => (
+						<TeamCard item={item} index={index} client:visible/>
 					))
 				}
 			</ul>
