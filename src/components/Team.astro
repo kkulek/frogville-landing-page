@@ -35,9 +35,18 @@ const team = [
 ];
 ---
 
-<div class="bg-gray-800">
+<div class="bg-gray-800 relative">
+	<div
+		class="absolute inset-0 bg-about bg-center bg-cover bg-no-repeat bg-fixed"
+	>
+		<div
+			class="absolute inset-0 bg-gray-800 mix-blend-multiply"
+			aria-hidden="true"
+		>
+		</div>
+	</div>
 	<div class="mx-auto max-w-7xl py-12 px-4 sm:px-6 lg:px-8 lg:py-24">
-		<div class="space-y-12">
+		<div class="space-y-12 relative">
 			<div
 				class="space-y-5 sm:space-y-4 md:max-w-xl lg:max-w-3xl xl:max-w-none"
 			>
@@ -51,16 +60,16 @@ const team = [
 					sit pretium egestas vel mattis neque.
 				</p>
 			</div>
-			<ul
-				role="list"
-				class=" sm:grid sm:grid-cols-2 sm:gap-6 lg:grid-cols-3 lg:gap-8"
+			<div
+				
+				class="sm:grid sm:grid-cols-2 sm:gap-6 lg:grid-cols-3 lg:gap-8"
 			>
 				{
 					team.map((item, index) => (
-						<TeamCard item={item} index={index} client:visible/>
+						<TeamCard item={item} index={index} client:visible />
 					))
 				}
-			</ul>
+			</div>
 		</div>
 	</div>
 </div>
