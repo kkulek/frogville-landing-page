@@ -11,7 +11,7 @@ export default function TeamCard({item, index}) {
 			class="rounded-lg bg-gray-900 py-10 px-6 text-center xl:px-10 xl:text-left mb-6 sm:mb-0"
 		>
 			<div class="space-y-6 xl:space-y-6">
-				<div class="mx-auto rounded-full h-56 w-56 bg-gray-800 shadow-2xl">
+				<div class="mx-auto rounded-full h-56 w-56 bg-gray-800 shadow-2xl hover:scale-105 transition-all duration-500">
 					<img
 						class="mx-auto rounded-full h-56 w-56 object-cover"
 						src={`/images/${item.photo}`}
