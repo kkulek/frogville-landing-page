@@ -9,7 +9,7 @@ export default function VideoModal({videoYT}) {
 	return (
 		<>
 			<button
-				className="inline-flex rounded-lg bg-indigo-600 ml-4 px-4 py-1.5 text-base font-semibold leading-7 text-white shadow-sm ring-1 ring-indigo-600 hover:bg-indigo-700 hover:ring-indigo-700"
+				className="inline-flex rounded-lg bg-custom-accent ml-4 px-4 py-1.5 text-base font-semibold leading-7 text-white shadow-sm hover:bg-rose-500"
 				onClick={() => setOpen(true)}
 			>
 				Watch trailer

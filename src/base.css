@@ -3,7 +3,14 @@
 @tailwind utilities;
 
 @layer utilities {
-    .container {
-        @apply mx-auto max-w-[1000px] py-10 px-6 sm:px-10
-    }
+	.container {
+		@apply mx-auto max-w-[1000px] py-10 px-6 sm:px-10;
+	}
+	.accent-underline-xl {
+		@apply -inset-x-1 bottom-0 border-b-[0.9rem] border-[#BF1522];
+	}
+
+	.accent-underline {
+		@apply -inset-x-1 bottom-0 border-b-[0.6rem] border-rose-500;
+	}
 }
