@@ -37,7 +37,7 @@ export default function Navigation() {
 								<a
 									key={item.name}
 									href={item.href}
-									className="block font-medium text-white hover:text-gray-300 text-left"
+									className="block font-medium text-white hover:text-rose-500 text-left"
 								>
 									{item.name}
 								</a>
