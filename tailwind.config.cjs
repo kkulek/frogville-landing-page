@@ -6,14 +6,15 @@ module.exports = {
 			colors: {
 				custom: {
 					dark: "#0f172a",
+					accent: "#BF1522",
 				},
 			},
 			backgroundImage: {
 				"top-layer": "url('/images/wave-top-dark.svg')",
 				"bottom-layer": "url('/images/wave-bottom-dark.svg')",
 				"bottom-layer2": "url('/images/wave-bottom-light.svg')",
-				"about": "url('/images/bg-about.png')"
-			}
+				about: "url('/images/bg-about.png')",
+			},
 		},
 	},
 	plugins: [
